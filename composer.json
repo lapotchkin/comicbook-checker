@@ -1,0 +1,29 @@
+{
+    "name": "selikhovleonid/nadir2-skeleton",
+    "description": "Nadir2 PHP Microframework Skeleton",
+    "keywords": [
+        "nadir2",
+        "php-framework",
+        "php-micro-framework",
+        "template",
+        "skeleton"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leonid Selikhov",
+            "email": "selikhovleonid@ya.ru",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "selikhovleonid/nadir2": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    }
+}
