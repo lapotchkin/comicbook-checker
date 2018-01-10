@@ -6,6 +6,12 @@ return [
             'api_url' => 'https://comicvine.gamespot.com/api',
             'api_key' => '',
         ],
+    'user'              => is_readable(__DIR__ . '/user.local.php')
+        ? require __DIR__ . '/user.local.php'
+        : [
+            'login' => '',
+            'pass'  => '',
+        ],
     // The path map of the application components
     'componentsRootMap' => [
         'models'      => '/models',
@@ -29,7 +35,7 @@ return [
         ],
         'get'    => [
             '/'  => [
-                'ctrl' => ['Test', 'actionDefault'],
+                'ctrl' => ['Main', 'actionDefault'],
                 'auth' => TRUE,
             ],
             '.*' => [
